@@ -1,13 +1,11 @@
-import 'package:dynamic_app_icon_app/Presentation/Components/spacer.dart';
-import 'package:dynamic_app_icon_app/Presentation/Declarations/Images/image_files.dart';
-import 'package:dynamic_app_icon_app/Presentation/Declarations/constants.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter_dynamic_icon/flutter_dynamic_icon.dart';
-
+import '../../../Components/spacer.dart';
+import '../../../Declarations/Images/image_files.dart';
+import '../../../Declarations/constants.dart';
 import '../../../Components/app_bar.dart';
-import 'package:flutter/material.dart';
-
 import '../../../Components/primary_btn.dart';
+
+import 'package:flutter_dynamic_icon/flutter_dynamic_icon.dart';
+import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -35,14 +33,8 @@ class _MyHomePageState extends State<MyHomePage> {
               buildIconTile(1, 'dark'),
               buildIconTile(2, 'blue'),
               HeightSpacer(myHeight: kSpacing),
-              Padding(
-                padding: EdgeInsets.only(bottom: kSpacing * 2),
-                child: Align(
-                    alignment: Alignment.bottomCenter,
-                    child: PrimaryBtn(
-                        btnFun: () => changeAppIcon(),
-                        btnText: 'Set as app icon')),
-              ),
+              PrimaryBtn(
+                  btnFun: () => changeAppIcon(), btnText: 'Set as app icon'),
             ],
           )),
     );
@@ -71,26 +63,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.grey.withOpacity(0.5),
                       size: 30,
                     )),
-
-          //  Row(
-          //   children: [
-          //     Image.asset(
-          //       imagefiles[index],
-          //       width: 45,
-          //       height: 45,
-          //     ),
-          //     WidthSpacer(myWidth: kSpacing),
-          //     Text(themeTxt, style: const TextStyle(fontSize: 25)),
-          //     WidthSpacer(myWidth: kSpacing),
-          //     iconIndex == index
-          //         ? const Icon(
-          //             Icons.check_circle_outline,
-          //             color: Colors.green,
-          //             size: 30,
-          //           )
-          //         : const SizedBox(),
-          //   ],
-          // ),
         ),
       );
 
@@ -98,12 +70,12 @@ class _MyHomePageState extends State<MyHomePage> {
     try {
       if (await FlutterDynamicIcon.supportsAlternateIcons) {
         await FlutterDynamicIcon.setAlternateIconName(iconName[iconIndex]);
-        print("App icon change successful");
+        debugPrint("App icon change successful");
         return;
       }
     } catch (e) {
-      print("Failed to change app icon ${e.toString()}");
+      debugPrint("Exception: ${e.toString()}");
     }
-    print("Failed to change app icon ");
+    debugPrint("Failed to change app icon ");
   }
 }
