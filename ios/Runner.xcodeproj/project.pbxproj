@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		9A99298CF803615714F397A2 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D566E935CA44265F9437C4 /* Pods_Runner.framework */; };
+		B1625FE128E04EE400DEED0F /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = B1625FDE28E04EE400DEED0F /* icon3.png */; };
+		B1625FE228E04EE400DEED0F /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = B1625FDF28E04EE400DEED0F /* icon1.png */; };
+		B1625FE328E04EE400DEED0F /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1625FE028E04EE400DEED0F /* icon2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +49,9 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1625FDE28E04EE400DEED0F /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
+		B1625FDF28E04EE400DEED0F /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		B1625FE028E04EE400DEED0F /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
 		BA0C206A1CC3522877521A38 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,7 +82,6 @@
 				8162E3CBCA1ADF9790030057 /* Pods-Runner.release.xcconfig */,
 				BA0C206A1CC3522877521A38 /* Pods-Runner.profile.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -113,6 +118,9 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				B1625FDF28E04EE400DEED0F /* icon1.png */,
+				B1625FE028E04EE400DEED0F /* icon2.png */,
+				B1625FDE28E04EE400DEED0F /* icon3.png */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -190,8 +198,11 @@
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				B1625FE228E04EE400DEED0F /* icon1.png in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
+				B1625FE328E04EE400DEED0F /* icon2.png in Resources */,
+				B1625FE128E04EE400DEED0F /* icon3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
